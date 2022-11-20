@@ -12,7 +12,7 @@ export const Foods = ({ match }) => {
     .then((data) =>
       console.log(data)
     )
-  }, [])
+  }, [match])
 
   return (
     <Fragment>
