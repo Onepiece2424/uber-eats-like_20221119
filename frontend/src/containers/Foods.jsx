@@ -5,6 +5,8 @@ import { fetchFoods } from '../apis/foods';
 
 export const Foods = ({ match }) => {
 
+  console.log(match)
+
   useEffect(() => {
     fetchFoods(match.params.restaurantsId)
     .then((data) =>
