@@ -1,4 +1,4 @@
-import { REQUEST_STATE } from '../constants'
+import { REQUEST_STATE } from '../constants';
 
 export const initialState = {
   fetchState: REQUEST_STATE.INITIAL,
@@ -10,7 +10,7 @@ export const restaurantsActionTypes = {
   FETCH_SUCCESS: 'FETCH_SUCCESS'
 }
 
-export const restaurantsReduer = (state, action) => {
+export const restaurantsReducer = (state, action) => {
   switch (action.type) {
     case restaurantsActionTypes.FETCHING:
       return {
